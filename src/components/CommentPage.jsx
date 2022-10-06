@@ -8,8 +8,8 @@ const CommentPage = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    async function fetchPost() {
-      await fetch("https://dummyjson.com/posts/" + id)
+     function fetchPost() {
+       fetch("https://dummyjson.com/posts/" + id)
         .then((res) => res.json())
         .then((post) => setCommentPage(post));
     }
